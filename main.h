@@ -20,7 +20,6 @@ typedef struct call
 	int (*f)(char *, va_list, int);
 } call_t;
 
-int _putchar(char c);
 int _printf(const char *format, ...);
 int buff_append(char *buff_dest, va_list arg, int buff_count, char type);
 int print_buff(char *buff, unsigned int nbuff);
