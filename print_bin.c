@@ -13,7 +13,7 @@ int print_bin(char *buff_dest, va_list arg, int buff_count)
 	unsigned int tmp = number;
 	int bin = 1;
 
-	int bin = 1;
+	while (tmp > 1)
 	{
 		bin *= 2;
 		tmp /= 2;

@@ -1,16 +1,16 @@
 #include "main.h"
 
 /**
- * print_int - subsititutes %i by argument number
+ * print_int - substitute %i by argument number
  * @buff_dest: string to change
  * @arg: va_list arg to change
- * @buff_count: index dst where the c of %c is
- * Return: new index
+ * @buff_count: index of dst where the c of %c is
+ * Return: New index
  */
 int print_int(char *buff_dest, va_list arg, int buff_count)
 {
 	int tens = 1;
-	unsigned int temp;
+	unsigned int tmp;
 	int number;
 
 	number = va_arg(arg, int);
@@ -29,7 +29,7 @@ int print_int(char *buff_dest, va_list arg, int buff_count)
 	while (tmp > 9)
 	{
 		tens *= 10;
-		tmps /= 10;
+		tmp /= 10;
 	}
 
 	tmp = number;
